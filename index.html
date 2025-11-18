@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+   
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+<title> Average Calculator </title>
+
+<style>
+  .contai {
+    width: 500px;           
+    margin: 20px auto;         
+    border: 2px solid black;   
+    border-radius: 10px;     
+    background: lightgrey;     
+    text-align: center;      
+    font-family: 'Pixelify Sans', sans-serif; 
+  }
+
+
+  </style>
+
+
+</head>
+
+<br><br>
+<br><br>
+
+         <body style="font-family: 'Pixelify Sans', sans-serif;">
+
+         <div class="contai">
+
+        <center>
+<br>
+        <h1 style="font-size: 35px;" > Student Calculator </h1>
+
+    
+       <label style="display:inline-block; width: 120px;">First Name:</label>
+<input type="text" id="First_Name">
+
+<br><br>
+
+<label style="display:inline-block; width: 120px;">Last Name:</label>
+<input type="text" id="Last_Name">
+<br>
+
+  </center>
+    <br>
+
+
+
+   <h1 style="font-size: 20px;">Input your Grades:</h1>
+
+   <center>
+<div style="display: grid; grid-template-columns: 2fr 2fr; gap: 15px 50px; width: 450px;">
+
+    <div>
+        <label>ENG:</label>
+        <input type="text" id="ENG">
+    </div>
+
+    <div>
+        <label>SCI:</label>
+        <input type="text" id="SCI">
+    </div>
+
+    <div>
+        <label>ICT:</label>
+        <input type="text" id="ICT">
+    </div>
+
+    <div>
+        <label>MATH:</label>
+        <input type="text" id="MATH">
+    </div>
+
+    <div>
+        <label>FIL:</label>
+        <input type="text" id="FIL">
+    </div>
+
+    <div>
+        <label>PE:</label>
+        <input type="text" id="PE">
+    </div>
+
+</div>
+
+</body>
+<br> 
+<button py-click="averagecounter">Calculate GWA</button>
+<br>
+<div id="student_info"></div>
+<div id="summary"></div>
+<div id="output"></div>
+
+
+ <script type="py" src="main.py"></script>
+<br> <br>
+
+</div>
+</center>
+    </div>
+    </body>
+    </html>
